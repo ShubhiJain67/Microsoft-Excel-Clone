@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="http://ssl.gstatic.com/docs/spreadsheets/favicon3.ico" type="image/x-icon">  
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <title>Untitled spreadsheet - Google Sheets</title>
+</head>
+<body>
+    <div class="main-navigation-container">
+        <div class="excel-sheet-icon icon">
+            <img src="./media/svgs/sheets.svg" alt="Sheets" title="Sheets">
+        </div>
+        <div class="main-navigation">
+            <div class="title-container">
+                <div class="title" contenteditable="true">Untitled spreadsheet</div>
+                <div class="star-icons">
+                    <i class="material-icons icon-item hidden" title="Star">star</i>
+                    <i class="material-icons icon-item" title="Star">star_border</i>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="navigation-item file-nav-item">File</div>
+                <div class="navigation-item edit-nav-item">Edit</div>
+                <div class="navigation-item view-nav-item">View</div>
+                <div class="navigation-item insert-nav-item">Insert</div>
+                <div class="navigation-item format-nav-item">Format</div>
+                <div class="navigation-item data-nav-item">Data</div>
+                <div class="navigation-item tools-nav-item">Tools</div>
+                <div class="navigation-item add-ons-nav-item">Add-ons</div>
+                <div class="navigation-item help-nav-item">Help</div>
+            </div>
+        </div>
+    </div>
+    <div class="tool-bar-container">
+        <div class="item-list">
+            <i class="material-icons tool-item" title="Undo">undo</i>
+            <i class="material-icons tool-item" title="Redo">redo</i>
+            <i class="material-icons tool-item" title="Print">print</i>
+            <i class="material-icons tool-item" title="Paint">format_paint</i>
+        </div>
+        <div class="item-list">
+            <div class="zoom-sheet selector">
+                <select id = "zoom-sheet-selector" class="selector-list" onchange = "zoomSheet()" >  
+                    <option> 50% </option>  
+                    <option> 75% </option>  
+                    <option> 90% </option>  
+                    <option> 100% </option> 
+                    <option> 125% </option> 
+                    <option> 150% </option>  
+                    <option> 200% </option>  
+                </select>  
+            </div>
+        </div>
+        <div class="item-list">
+            <i class="material-icons tool-item" title="Bold">format_bold</i>
+            <i class="material-icons tool-item" title="Italics">format_italics</i>
+            <i class="material-icons tool-item" title="Strikethrough">strikethrough_s</i>
+            <i class="material-icons tool-item" title="Color">text_format</i>
+        </div>
+        <div class="item-list">
+            <i class="material-icons tool-item" title="Fill Color">format_color_fill</i>
+            <i class="material-icons tool-item" title="Border">border_all</i>
+            <i class="material-icons tool-item" title="Border">border_clear</i>
+            <i class="material-icons tool-item" title="Border">border_horizontal</i>
+            <i class="material-icons tool-item" title="Border">border_inner</i>
+            <i class="material-icons tool-item" title="Border">border_left</i>
+            <i class="material-icons tool-item" title="Border">border_bottom</i>
+            <i class="material-icons tool-item" title="Border">border_vertical</i>
+            <i class="material-icons tool-item" title="Border">border_right</i>
+            <i class="material-icons tool-item" title="Border">border_top</i>
+        </div>
+        <div class="item-list">
+            <div class="font-size selector">
+                <select id = "font-size-selector" class="selector-list" onchange = "changeFontSize()" >   
+                </select>  
+            </div>
+        </div>
+        <div class="item-list">
+            <i class="material-icons tool-item" title="Left Aligned">format_align_left</i>
+            <i class="material-icons tool-item" title="Right Aligned">format_align_right</i>
+            <i class="material-icons tool-item" title="Center Aligned">format_align_center</i>
+            <i class="material-icons tool-item" title="Justify Aligned">format_align_justify</i>
+        </div>
+    </div>
+    <div class="formula-bar-container">
+
+    </div>
+    <div class="sheets-container">
+        <div class="row-address-bar"></div>
+        <div class="sheet-container">
+            <div class="sheet" id="sheet-1"></div>
+        </div>
+        <div class="select-all"></div>
+        <div class="col-address-bar"></div>
+    </div>
+    <div class="sheets-navigator-container">
+
+    </div>
+</body>
+</html>

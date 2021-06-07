@@ -1,0 +1,258 @@
+$light-grey-color : #F1F3F4;
+// $grey-color : 'Noto Sans', 'Open Sans', sans-serif;
+$default-text-color : #202124;
+$light-text-color : #BCBCBC;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.main-navigation-container{
+    // border: 2px solid red;
+    height: 8vh;
+    display: flex;
+    border-bottom: 0.1rem solid $light-text-color;
+
+    .excel-sheet-icon{
+        // border: 2px solid black;
+        width: 4vw;
+        display: flex;
+        align-items: center;
+        padding: 0px 0px 0px 15px;
+
+        img{
+            width: 40px;
+        }
+    }
+
+    .main-navigation{
+        width: 95vw;
+
+        .title-container{
+            height: 5vh;
+            // border: 2px solid yellow;
+            display: flex;
+            align-items: center;
+
+            .title{
+                // border: 2px solid yellow;
+                width: 200px;
+                height: 80%;
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+                color: $light-text-color;
+                // font-weight: bold;
+                font-size: 18px;
+            }
+
+            .title:focus{
+                // border: 2px solid blue;
+                color: $default-text-color;
+                font-weight: normal;
+
+            }
+
+            .star-icons{
+                .icon-item{
+                    color: #6d6868;
+                    padding: 0px 5px;
+                    height: 100%;
+                    max-width: 40px;
+                    font-size: 20px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+                .icon-item:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .navigation{
+            height: 3vh;
+            // border: 2px solid green;
+            display: flex;
+            align-items: center;
+
+            .navigation-item{
+                // border: 2px solid blue;
+                padding: 2px 7px;
+                color: $default-text-color;
+                font-size: 14px;
+            }
+
+            .navigation-item:hover{
+                cursor: pointer;
+                background-color: $light-grey-color;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.tool-bar-container{
+    // border: 2px solid red;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    border-bottom: 0.1rem solid $light-text-color;
+
+    .item-list{
+        // border: 2px solid yellow;
+        margin: 0px 5px;
+        border-right: 2px solid $light-text-color ;
+        border-radius: 2px;
+        height: 60%;
+        display: flex;
+        align-items: center;
+
+        .tool-item{
+            // border: 2px solid green;
+            color: #6d6868;
+            padding: 0px 5px;
+            height: 100%;
+            max-width: 40px;
+            font-size: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .tool-item:hover{
+            cursor: pointer;
+            background-color: $light-grey-color;
+            border-radius:5px;
+        }
+
+        .selector{
+            .selector-list{
+                border: none;
+                padding : 0px 5px;
+            }
+        }
+    }
+}
+
+.formula-bar-container{
+    // border: 2px solid red;
+    height: 3.5vh;
+    border-bottom: 0.1rem solid $light-text-color;
+}
+
+.sheets-container{
+    // border: 2px solid red;
+    height: 78.5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+
+    .select-all{
+        border-right: 0.1rem solid $light-text-color;
+        border-bottom: 0.1rem solid $light-text-color;
+        height: 3.5vh;
+        width: 3vw;
+    }
+    .col-address-bar{
+        border-right: 0.1rem solid $light-text-color;
+        border-bottom: 0.1rem solid $light-text-color;
+        height: 3.5vh;
+        width: calc(100vw - 3vw);
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+
+        .col-address-cell{
+            min-height: 30px;
+            width: 120px;
+            border-right: 0.1rem solid $light-text-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .col-address-cell:hover{
+            cursor: pointer;
+        }
+    }
+    .row-address-bar{
+        border-right: 0.1rem solid $light-text-color;
+        border-bottom: 0.1rem solid $light-text-color;
+        height: calc(78vh - 3.5vh);
+        width: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+
+        .row-address-cell{
+            min-height: 30px;
+            width: 100%;
+            border-bottom: 0.1rem solid $light-text-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .row-address-cell:hover{
+            cursor: pointer;
+        }
+
+    }
+    .sheet-container{
+        border-right: 0.1rem solid $light-text-color;
+        border-bottom: 0.1rem solid $light-text-color;
+        height: calc(78vh - 3.5vh);
+        width: calc(100vw - 3vw);
+
+        .sheet{
+            // border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            .sheet-row{
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+    
+                .sheet-cell{
+                    height: 30px;
+                    width: 120px;
+                    border-bottom: 0.1rem solid $light-text-color;
+                    border-right: 0.1rem solid $light-text-color;
+                    overflow: hidden;
+                }
+                .sheet-cell.active{
+                    border: 3px solid blue;
+                }
+                // .sheet-cell.active::after{
+                //     content: '';
+                //     border: 4px solid blue;
+                //     position: relative;
+                //     top:100%;
+                //     left: 100%;
+                //     background: blue;
+                // }
+            }
+        }
+    }
+}
+
+.sheets-navigator-container{
+    // border: 2px solid red;
+    height: 6vh;
+}
