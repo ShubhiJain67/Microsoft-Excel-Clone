@@ -3,15 +3,20 @@ $(document).ready(function(){
     setSheetCells();
 
     $('.title').on("keydown", function(){
+        console.log("Key Down Function on Title Encountered")
         updateMetaTitle();
     });
 
     $('.sheet-cell').dblclick(function(e) {
+        console.log("Double Click Function on cell Encountered")
         activateCell(e)
     });
 
     $('.sheet-cell').click(function(e) {
-        deactivateActiveCells(e)
+        console.log("Click Function on cell Encountered")
+        if($(".sheet-cell.active")[0]?.id != e.target.id){
+            deactivateActiveCells(e);
+        }
     });
 });
 
