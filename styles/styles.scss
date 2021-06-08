@@ -104,7 +104,6 @@ $light-text-color : #BCBCBC;
 }
 
 .tool-bar-container{
-    // border: 2px solid red;
     height: 4vh;
     display: flex;
     align-items: center;
@@ -183,9 +182,14 @@ $light-text-color : #BCBCBC;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-        .col-address-cell:hover{
-            cursor: pointer;
+
+            &.active{
+                background-color: #ececec;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
     .row-address-bar{
@@ -205,29 +209,30 @@ $light-text-color : #BCBCBC;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-        .row-address-cell:hover{
-            cursor: pointer;
-        }
 
+            &.active{
+                background-color: #ececec;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
     .sheet-container{
         border-right: 0.1rem solid $light-text-color;
         border-bottom: 0.1rem solid $light-text-color;
         height: calc(78vh - 3.5vh);
         width: calc(100vw - 3vw);
+        overflow: hidden;
 
         .sheet{
             // border: 2px solid red;
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-            overflow: hidden;
 
             .sheet-row{
+                // border: 2px solid yellow;
                 display: flex;
-                align-items: center;
-                overflow: hidden;
     
                 .sheet-cell{
                     height: 30px;
@@ -237,7 +242,7 @@ $light-text-color : #BCBCBC;
                     overflow: hidden;
                 }
                 .sheet-cell.active{
-                    border: 3px solid blue;
+                    border: 3px solid #1A73E8;
                 }
                 // .sheet-cell.active::after{
                 //     content: '';

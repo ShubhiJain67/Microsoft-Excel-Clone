@@ -219,6 +219,10 @@
           justify-content: center;
 }
 
+.sheets-container .col-address-bar .col-address-cell.active {
+  background-color: #ececec;
+}
+
 .sheets-container .col-address-bar .col-address-cell:hover {
   cursor: pointer;
 }
@@ -256,6 +260,10 @@
           justify-content: center;
 }
 
+.sheets-container .row-address-bar .row-address-cell.active {
+  background-color: #ececec;
+}
+
 .sheets-container .row-address-bar .row-address-cell:hover {
   cursor: pointer;
 }
@@ -265,6 +273,7 @@
   border-bottom: 0.1rem solid #BCBCBC;
   height: calc(78vh - 3.5vh);
   width: calc(100vw - 3vw);
+  overflow: hidden;
 }
 
 .sheets-container .sheet-container .sheet {
@@ -275,19 +284,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  overflow: hidden;
 }
 
 .sheets-container .sheet-container .sheet .sheet-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
 }
 
 .sheets-container .sheet-container .sheet .sheet-row .sheet-cell {
@@ -299,7 +301,7 @@
 }
 
 .sheets-container .sheet-container .sheet .sheet-row .sheet-cell.active {
-  border: 3px solid blue;
+  border: 3px solid #1A73E8;
 }
 
 .sheets-navigator-container {
