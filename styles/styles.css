@@ -7,14 +7,6 @@
   letter-spacing: 0.5px;
 }
 
-.hidden {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
 .main-navigation-container {
   height: 8vh;
   display: -webkit-box;
@@ -128,7 +120,7 @@
   margin: 0px 5px;
   border-right: 2px solid #BCBCBC;
   border-radius: 2px;
-  height: 60%;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +148,13 @@
   cursor: pointer;
   background-color: #F1F3F4;
   border-radius: 5px;
+}
+
+.tool-bar-container .item-list .tool-item.active {
+  cursor: pointer;
+  background-color: #E6F4EA;
+  border-radius: 5px;
+  color: #4B9D64;
 }
 
 .tool-bar-container .item-list .selector .selector-list {
@@ -290,18 +289,35 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sheets-container .sheet-container .sheet .sheet-row .sheet-cell {
   height: 30px;
   width: 120px;
+  padding-left: 5px;
   border-bottom: 0.1rem solid #BCBCBC;
   border-right: 0.1rem solid #BCBCBC;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sheets-container .sheet-container .sheet .sheet-row .sheet-cell:focus {
+  border: 3px solid #5394e9;
 }
 
 .sheets-container .sheet-container .sheet .sheet-row .sheet-cell.active {
   border: 3px solid #1A73E8;
+}
+
+.sheets-container .sheet-container .sheet .sheet-row .sheet-cell.selected {
+  border: 3px solid #5394e9;
 }
 
 .sheets-navigator-container {

@@ -11,6 +11,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/generic/genric.css">
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -65,22 +66,23 @@
             </div>
         </div>
         <div class="item-list">
-            <i class="material-icons tool-item" title="Bold">format_bold</i>
-            <i class="material-icons tool-item" title="Italics">format_italics</i>
-            <i class="material-icons tool-item" title="Strikethrough">strikethrough_s</i>
-            <i class="material-icons tool-item" title="Color">text_format</i>
+            <i class="material-icons tool-item text-format toggle-class" id="text-format-bold" title="Bold">format_bold</i>
+            <i class="material-icons tool-item text-format toggle-class" id="text-format-italic" title="Italic">format_italics</i>
+            <i class="material-icons tool-item text-format toggle-class" id="text-format-underline" title="Underline">format_underlined</i>
+            <i class="material-icons tool-item text-format toggle-class" id="text-format-strikethrough" title="Strikethrough">strikethrough_s</i>
+            <i class="material-icons tool-item text-format toggle-class" id="text-format-color" title="Color">text_format</i>
         </div>
         <div class="item-list">
-            <i class="material-icons tool-item" title="Fill Color">format_color_fill</i>
-            <i class="material-icons tool-item" title="Border">border_all</i>
-            <i class="material-icons tool-item" title="Border">border_clear</i>
-            <i class="material-icons tool-item" title="Border">border_horizontal</i>
-            <i class="material-icons tool-item" title="Border">border_inner</i>
-            <i class="material-icons tool-item" title="Border">border_left</i>
-            <i class="material-icons tool-item" title="Border">border_bottom</i>
-            <i class="material-icons tool-item" title="Border">border_vertical</i>
-            <i class="material-icons tool-item" title="Border">border_right</i>
-            <i class="material-icons tool-item" title="Border">border_top</i>
+            <i class="material-icons tool-item cell-format enable-class" id="cell-format-fill" title="Fill Color">format_color_fill</i>
+            <i class="material-icons tool-item cell-format toggle-class" id="cell-format-all-border" title="All Border">border_all</i>
+            <i class="material-icons tool-item cell-format toggle-class" id="cell-format-clear-border" title="Clear Border">border_clear</i>
+            <i class="material-icons tool-item cell-format toggle-class" id="cell-format-horizontal-border" title="Horizontal Border">border_horizontal</i>
+            <i class="material-icons tool-item cell-format toggle-class" id="cell-format-inner-border" title="Inner Border">border_inner</i>
+            <i class="material-icons tool-item cell-format toggle-class" id="cell-format-left-border" title="Left Border">border_left</i>
+            <i class="material-icons tool-item cell-format toggle-class" id="cell-format-bottom-border" title="Bottom Border">border_bottom</i>
+            <i class="material-icons tool-item cell-format toggle-class" id="cell-format-vertical-border" title="Vertical Border">border_vertical</i>
+            <i class="material-icons tool-item cell-format toggle-class" id="cell-format-right-border" title="Right Border">border_right</i>
+            <i class="material-icons tool-item cell-format toggle-class" id="cell-format-top-border" title="Top Border">border_top</i>
         </div>
         <div class="item-list">
             <div class="font-size selector">
@@ -89,10 +91,10 @@
             </div>
         </div>
         <div class="item-list">
-            <i class="material-icons tool-item" title="Left Aligned">format_align_left</i>
-            <i class="material-icons tool-item" title="Right Aligned">format_align_right</i>
-            <i class="material-icons tool-item" title="Center Aligned">format_align_center</i>
-            <i class="material-icons tool-item" title="Justify Aligned">format_align_justify</i>
+            <i class="material-icons tool-item text-format enable-class" id="text-format-align-left" title="Left Aligned">format_align_left</i>
+            <i class="material-icons tool-item text-format enable-class" id="text-format-align-right" title="Right Aligned">format_align_right</i>
+            <i class="material-icons tool-item text-format enable-class" id="text-format-align-center" title="Center Aligned">format_align_center</i>
+            <i class="material-icons tool-item text-format enable-class" id="text-format-align-justify" title="Justify Aligned">format_align_justify</i>
         </div>
     </div>
     <div class="formula-bar-container">

@@ -1,0 +1,93 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.text-format-bold {
+  font-weight: bold;
+}
+
+.text-format-italic {
+  font-style: italic;
+}
+
+.text-format-strikethrough {
+  text-decoration: line-through;
+}
+
+.text-format-underline {
+  text-decoration: underline;
+}
+
+.text-format-align-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.text-format-align-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.text-format-align-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.text-format-align-justify {
+  text-align: justify !important;
+}
+
+.cell-format-all-border {
+  border: 2px solid #202124 !important;
+}
+
+.cell-format-clear-border {
+  border: 1px solid #BCBCBC !important;
+}
+
+.cell-format-left-border {
+  border-left: 2px solid #202124 !important;
+}
+
+.cell-format-bottom-border {
+  border-bottom: 2px solid #202124 !important;
+}
+
+.cell-format-right-border {
+  border-right: 2px solid #202124 !important;
+}
+
+.cell-format-top-border {
+  border-top: 2px solid #202124 !important;
+}
+
+.sheet-cell.selected {
+  border: 2px solid #5394e9 !important;
+}
+
+.sheet-cell.active {
+  border: 2px solid #1A73E8 !important;
+}
+/*# sourceMappingURL=genric.css.map */

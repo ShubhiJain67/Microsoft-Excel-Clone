@@ -1,0 +1,87 @@
+@import './../global/global.scss';
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.text-format-bold{
+    font-weight: bold;
+}
+
+.text-format-italic{
+    font-style: italic;
+}
+
+.text-format-strikethrough{
+    text-decoration: line-through;
+}
+
+.text-format-underline{
+    text-decoration: underline;
+}
+
+.text-format-align-left{
+    display: flex;
+    align-content: flex-start;
+}
+
+.text-format-align-right{
+    display: flex;
+    align-content: flex-end;   
+}
+.text-format-align-center{
+    display: flex;
+    align-content: center;  
+}
+
+.text-format-align-justify{
+    text-align: justify !important;    
+}
+
+.cell-format-all-border{
+    border: 2px solid $default-text-color !important;
+}
+
+.cell-format-clear-border{
+    border: 1px solid $light-text-color !important;
+
+}
+
+.cell-format-horizontal-border{
+
+}
+
+.cell-format-inner-border{
+
+}
+
+.cell-format-left-border{
+    border-left : 2px solid $default-text-color !important;
+}
+
+.cell-format-bottom-border{
+    border-bottom : 2px solid $default-text-color !important;
+}
+
+.cell-format-vertical-border{
+}
+
+.cell-format-right-border{
+    border-right : 2px solid $default-text-color !important;
+}
+
+.cell-format-top-border{
+    border-top : 2px solid $default-text-color !important;
+}
+
+.sheet-cell.selected{
+    border : 2px solid $light-blue-color !important;
+}
+
+.sheet-cell.active{
+    border : 2px solid $dark-blue-color !important;
+}
